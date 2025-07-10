@@ -13,8 +13,8 @@
       "name": "GENERATE TEXT",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "position": [
-        1300,
-        20
+        1312,
+        32
       ],
       "typeVersion": 1.8,
       "onError": "continueRegularOutput"
@@ -32,8 +32,8 @@
       "name": "GENERATE PROMPT",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "position": [
-        3100,
-        20
+        3104,
+        32
       ],
       "typeVersion": 1.8
     },
@@ -51,8 +51,8 @@
       "name": "OPENAI GENERATES IMAGE",
       "type": "@n8n/n8n-nodes-langchain.openAi",
       "position": [
-        900,
-        460
+        912,
+        464
       ],
       "typeVersion": 1.8,
       "credentials": {
@@ -75,8 +75,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.3,
       "position": [
-        1240,
-        220
+        1248,
+        224
       ],
       "id": "fd9b077e-cc69-4239-a506-4feb22fdbf2d",
       "name": "Anthropic Chat Model1",
@@ -100,8 +100,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.3,
       "position": [
-        3100,
-        220
+        3104,
+        224
       ],
       "id": "30e30f2d-a1b8-487a-9034-d9d5924efea5",
       "name": "Anthropic Chat Model2",
@@ -197,8 +197,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        1100,
-        460
+        1104,
+        464
       ],
       "id": "678149f7-1367-46f7-8a75-859368de3841",
       "name": "Find Business Folder",
@@ -216,24 +216,25 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1700,
-        460
+        1712,
+        464
       ],
       "id": "8e4af719-fb92-40fe-91c0-8d9401207b7a",
       "name": "Prepare Upload Data"
     },
     {
       "parameters": {
-        "jsCode": "// Enhanced Optimize Image Prompt Node - Replace your existing code\n\nconst fullPrompt = $('GENERATE PROMPT').item.json.output;\nconst dynamicData = $('Prepare Dynamic Data').item.json;\nconst maxLength = 950;\n\n// Extract key information for prompt enhancement\nconst socialContentType = dynamicData.socialContentType || 'Educational';\nconst businessCategory = dynamicData.businessCategory || '';\nconst specificTopic = dynamicData.specificTopic || '';\n\n// CONTENT-SPECIFIC VISUAL ENHANCEMENTS\nconst visualEnhancements = {\n  'Educational': {\n    safetyElements: ', safety equipment visible, professional demonstration',\n    lightingStyle: ', clear educational lighting, well-documented style',\n    professionalFocus: ', expert at work, teaching moment captured'\n  },\n  \n  'Problem & Solution': {\n    safetyElements: ', diagnostic tools visible, problem clearly shown',\n    lightingStyle: ', focused lighting on problem area, clear detail',\n    professionalFocus: ', professional assessment, solution-oriented'\n  },\n  \n  'Process Showcase': {\n    safetyElements: ', proper safety protocols, quality tools in use',\n    lightingStyle: ', behind-the-scenes lighting, authentic workspace',\n    professionalFocus: ', skilled craftsperson, process in action'\n  },\n  \n  'Product Highlight': {\n    safetyElements: ', premium quality visible, finished excellence',\n    lightingStyle: ', attractive presentation lighting, appealing showcase',\n    professionalFocus: ', professional presentation, quality craftsmanship'\n  },\n  \n  'Community & Stories': {\n    safetyElements: ', authentic interaction, genuine moment',\n    lightingStyle: ', natural warm lighting, human connection',\n    professionalFocus: ', real people, authentic relationships'\n  }\n};\n\n// INDUSTRY-SPECIFIC VISUAL REQUIREMENTS\nconst industryVisuals = {\n  'Automotive': ', modern garage setting, professional automotive tools, vehicle components clearly visible',\n  'Plumbing': ', clean residential or commercial setting, quality plumbing tools, professional installation',\n  'Electrical': ', safety-focused electrical work, modern electrical components, NICEIC standards visible',\n  'Food Service': ', appetizing food presentation, clean kitchen environment, culinary skill demonstrated',\n  'General': ', professional service environment, quality tools, expert workmanship'\n};\n\n// Get enhancement elements\nconst contentEnhancement = visualEnhancements[socialContentType] || visualEnhancements['Educational'];\nconst industryVisual = industryVisuals[businessCategory] || industryVisuals['General'];\n\n// PROMPT OPTIMIZATION FUNCTION\nfunction optimizePrompt(prompt, maxLength) {\n  // First, add essential visual enhancements if there's room\n  let enhancedPrompt = prompt;\n  \n  // Add content-type specific elements\n  const remainingSpace = maxLength - prompt.length;\n  if (remainingSpace > 100) {\n    enhancedPrompt += contentEnhancement.professionalFocus;\n    if (remainingSpace > 150) {\n      enhancedPrompt += industryVisual;\n      if (remainingSpace > 200) {\n        enhancedPrompt += contentEnhancement.lightingStyle;\n        if (remainingSpace > 250) {\n          enhancedPrompt += contentEnhancement.safetyElements;\n        }\n      }\n    }\n  }\n  \n  // If still too long, truncate intelligently\n  if (enhancedPrompt.length > maxLength) {\n    const truncated = enhancedPrompt.substring(0, maxLength);\n    const lastComma = truncated.lastIndexOf(',');\n    const lastPeriod = truncated.lastIndexOf('.');\n    \n    // Cut at the last comma or period to keep it grammatical\n    const cutPoint = Math.max(lastComma, lastPeriod);\n    \n    if (cutPoint > maxLength * 0.8) { // If we can keep 80% of content\n      enhancedPrompt = enhancedPrompt.substring(0, cutPoint + 1);\n    } else {\n      // Fallback to simple truncation with professional ending\n      enhancedPrompt = enhancedPrompt.substring(0, maxLength - 25) + ', professional quality';\n    }\n  }\n  \n  return enhancedPrompt;\n}\n\n// APPLY SPECIFIC TOPIC CONTEXT\nlet contextualPrompt = fullPrompt;\nif (specificTopic) {\n  // Replace generic placeholders with specific topic\n  contextualPrompt = contextualPrompt.replace(/{specific_element}|{SPECIFIC_ELEMENT}/gi, specificTopic);\n  contextualPrompt = contextualPrompt.replace(/{specific_topic}/gi, specificTopic);\n  \n  // If the topic isn't already in the prompt, add context\n  if (!contextualPrompt.toLowerCase().includes(specificTopic.toLowerCase()) && specificTopic.length > 3) {\n    const topicContext = ` focusing on ${specificTopic}`;\n    if ((contextualPrompt.length + topicContext.length) < maxLength) {\n      contextualPrompt += topicContext;\n    }\n  }\n}\n\n// OPTIMIZE THE PROMPT\nconst optimizedPrompt = optimizePrompt(contextualPrompt, maxLength);\n\n// QUALITY CHECKS\nconst qualityChecks = {\n  hasBusinessContext: optimizedPrompt.toLowerCase().includes(businessCategory.toLowerCase()),\n  hasContentTypeContext: socialContentType !== 'Educational' ? true : optimizedPrompt.includes('educational') || optimizedPrompt.includes('professional'),\n  hasProfessionalElements: optimizedPrompt.includes('professional') || optimizedPrompt.includes('quality') || optimizedPrompt.includes('skilled'),\n  hasSpecificTopic: specificTopic ? optimizedPrompt.toLowerCase().includes(specificTopic.toLowerCase()) : true,\n  isWithinLimit: optimizedPrompt.length <= maxLength\n};\n\nconst qualityScore = Object.values(qualityChecks).filter(Boolean).length / Object.keys(qualityChecks).length;\n\nconsole.log('=== IMAGE PROMPT OPTIMIZATION ===');\nconsole.log('Content Type:', socialContentType);\nconsole.log('Business Category:', businessCategory);\nconsole.log('Specific Topic:', specificTopic || 'None');\nconsole.log('Original length:', fullPrompt.length);\nconsole.log('Optimized length:', optimizedPrompt.length);\nconsole.log('Quality score:', Math.round(qualityScore * 100) + '%');\nconsole.log('Quality checks:', qualityChecks);\nconsole.log('==================================');\n\nreturn {\n  json: {\n    optimizedPrompt: optimizedPrompt,\n    originalPrompt: fullPrompt,\n    contextualPrompt: contextualPrompt,\n    originalLength: fullPrompt.length,\n    finalLength: optimizedPrompt.length,\n    wasTruncated: fullPrompt.length > maxLength || contextualPrompt.length > maxLength,\n    wasEnhanced: optimizedPrompt !== fullPrompt,\n    \n    // CONTEXT INFORMATION\n    socialContentType: socialContentType,\n    businessCategory: businessCategory,\n    specificTopic: specificTopic,\n    \n    // QUALITY METRICS\n    qualityChecks: qualityChecks,\n    qualityScore: qualityScore,\n    \n    // ENHANCEMENT DETAILS\n    enhancementsApplied: {\n      contentTypeSpecific: optimizedPrompt.includes(contentEnhancement.professionalFocus.substring(2, 15)),\n      industrySpecific: optimizedPrompt.includes(industryVisual.substring(2, 15)),\n      topicSpecific: specificTopic ? optimizedPrompt.toLowerCase().includes(specificTopic.toLowerCase()) : false\n    },\n    \n    debug: {\n      contentEnhancement: contentEnhancement,\n      industryVisual: industryVisual,\n      optimizationSteps: 'topic_context -> enhancements -> truncation',\n      recommendedImprovements: qualityScore < 0.8 ? 'Consider more specific topic or longer base prompt' : 'Optimization successful'\n    }\n  }\n};"
+        "jsCode": "// MINIMAL TEST VERSION - Replace your \"Optimize Image Prompt\" node with this\n// This will test if the issue is with the return object complexity\n\nconsole.log('=== MINIMAL OPTIMIZE IMAGE PROMPT TEST ===');\n\n// Get input data\nconst inputData = $input.item.json;\nconsole.log('Input received, keys:', Object.keys(inputData));\n\n// Get the prompt\nlet fullPrompt = inputData?.output || 'Professional business image showing quality service';\nconsole.log('Prompt length:', fullPrompt.length);\n\n// Simple truncation if needed\nlet optimizedPrompt = fullPrompt;\nif (optimizedPrompt.length > 950) {\n  optimizedPrompt = optimizedPrompt.substring(0, 900) + ', professional quality, no text or logos';\n}\n\nconsole.log('Optimized length:', optimizedPrompt.length);\nconsole.log('✅ Processing complete');\n\n// MINIMAL return object - just the essentials\nreturn {\n  json: {\n    optimizedPrompt: optimizedPrompt,\n    originalLength: fullPrompt.length,\n    finalLength: optimizedPrompt.length,\n    success: true\n  }\n};"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3480,
-        200
+        3488,
+        208
       ],
       "id": "21d6ea07-92b8-480e-9bf7-e29e42e3be1b",
-      "name": "Optimize Image Prompt"
+      "name": "Optimize Image Prompt",
+      "retryOnFail": false
     },
     {
       "parameters": {
@@ -242,7 +243,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3000,
+        3008,
         -240
       ],
       "id": "73010e1b-1760-475d-b843-9ed675c91d03",
@@ -255,8 +256,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1300,
-        460
+        1312,
+        464
       ],
       "id": "8a7a5f86-5a55-4192-9d74-e03a043bda4f",
       "name": "Create Content Folder"
@@ -268,8 +269,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1820,
-        920
+        1824,
+        928
       ],
       "id": "0cd64be4-4628-4150-b9f5-b9ac7a28ec26",
       "name": "Prepare Google Doc Content"
@@ -282,8 +283,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        2100,
-        920
+        2112,
+        928
       ],
       "id": "e9f0df4d-df26-4ec6-b7dc-9e7a5f69b9cb",
       "name": "Google Docs Create Document",
@@ -301,8 +302,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2740,
-        920
+        2752,
+        928
       ],
       "id": "8beadb33-fa86-441a-8af2-f0ae2ae5f9c5",
       "name": "Enhanced Notion Update"
@@ -326,8 +327,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        1500,
-        460
+        1504,
+        464
       ],
       "id": "239f98e6-765b-4a13-bd0f-16f07fcda2fc",
       "name": "Google Drive Create Folder",
@@ -358,8 +359,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        1940,
-        460
+        1952,
+        464
       ],
       "id": "94a1bfdb-2ff7-4e7b-8273-37115de89424",
       "name": "Google Drive Upload",
@@ -386,8 +387,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        2420,
-        920
+        2432,
+        928
       ],
       "id": "7a95cce2-8b31-4e0d-8c79-d51842c6be19",
       "name": "Google Docs Add Content",
@@ -411,8 +412,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.3,
       "position": [
-        2720,
-        220
+        2528,
+        256
       ],
       "id": "614274de-c8ec-43f8-9048-30495cc8593a",
       "name": "Anthropic Chat Model",
@@ -430,8 +431,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2200,
-        460
+        2208,
+        464
       ],
       "id": "4ffa18e3-7413-45b2-83ee-a6f35f9218eb",
       "name": "Download & Resize Images"
@@ -450,8 +451,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2420,
-        460
+        2432,
+        464
       ],
       "id": "f841bb3a-a2be-4b1f-9bc5-87226fe0ab48",
       "name": "Download Universal Image"
@@ -471,7 +472,7 @@
       "typeVersion": 4.2,
       "position": [
         2640,
-        460
+        464
       ],
       "id": "1641847b-6c26-46fb-a43b-0eb1909c3741",
       "name": "Download Square Image"
@@ -494,8 +495,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        900,
-        700
+        912,
+        704
       ],
       "id": "feabc056-4b9f-4fa1-8b38-755a8571d659",
       "name": "Upload Universal Image",
@@ -524,7 +525,7 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        3100,
+        3104,
         560
       ],
       "id": "40ee0c3f-ee9f-494f-a230-bfeb3d3ea7f1",
@@ -543,8 +544,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1560,
-        920
+        1568,
+        928
       ],
       "id": "747b519c-b56d-4b24-bc5a-5ecfb9b44c18",
       "name": "Collect Resized Images"
@@ -554,8 +555,8 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.2,
       "position": [
-        1340,
-        920
+        1344,
+        928
       ],
       "id": "5c59251c-f88d-4cff-b2dc-fb551e951fe2",
       "name": "Merge"
@@ -567,7 +568,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2760,
+        2768,
         -240
       ],
       "id": "f57d3c0c-301b-4e02-a6fd-f4bd993bc3c1",
@@ -580,7 +581,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1780,
+        1792,
         -240
       ],
       "id": "f0ab5088-b114-40b4-b118-601b82317d72",
@@ -593,7 +594,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3220,
+        3232,
         -240
       ],
       "id": "8b81d02f-8129-42f1-8073-281716be45a9",
@@ -606,8 +607,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1100,
-        20
+        1104,
+        32
       ],
       "id": "46400390-4200-4678-b920-35ba5a400a5b",
       "name": "Process Research Results"
@@ -638,7 +639,7 @@
       "typeVersion": 4.2,
       "position": [
         880,
-        20
+        32
       ],
       "id": "2a3c4b5d-e537-43ff-81d1-c6280b2b23cf",
       "name": "Tavily Search"
@@ -650,8 +651,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1880,
-        20
+        1888,
+        32
       ],
       "id": "2ae81a9d-0e39-486e-971e-cef581e4d0a3",
       "name": "Content Validation Check"
@@ -685,8 +686,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        2100,
-        20
+        2112,
+        32
       ],
       "id": "3a8bf680-72f2-4c01-85b2-b20f02e6d164",
       "name": "If"
@@ -698,8 +699,8 @@
       "type": "n8n-nodes-base.stopAndError",
       "typeVersion": 1,
       "position": [
-        2300,
-        220
+        2304,
+        224
       ],
       "id": "342efb22-03d0-4692-a0aa-bc0bbe14a97e",
       "name": "Stop and Error"
@@ -715,8 +716,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2,
       "position": [
-        2760,
-        20
+        2640,
+        32
       ],
       "id": "91179795-e03c-4b21-8635-793b8b59b7f0",
       "name": "GENERATE SHORTFORM TEXT"
@@ -728,8 +729,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2560,
-        20
+        2400,
+        32
       ],
       "id": "a602f4ce-fe05-4c45-989e-44351029957f",
       "name": "Build Shortform System Message"
@@ -741,7 +742,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2500,
+        2512,
         -240
       ],
       "id": "467d3742-ece5-4d94-a0c0-632e92541104",
@@ -752,7 +753,7 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        780,
+        784,
         -560
       ],
       "id": "ce75d3ac-d5a8-4a2f-b87a-8173a970a188",
@@ -786,8 +787,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        3100,
-        920
+        3104,
+        928
       ],
       "id": "6b32fd6a-da9f-4fb6-8f37-21acd4ce3d5e",
       "name": "If1"
@@ -799,7 +800,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1540,
+        1552,
         -240
       ],
       "id": "0535b81c-5707-4104-8a12-83acea9b7992",
@@ -814,8 +815,8 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        780,
-        -260
+        784,
+        -256
       ],
       "id": "2a457719-2a05-477d-9048-b39b1ed5638d",
       "name": "SplitInBatches"
@@ -827,7 +828,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1320,
+        1328,
         -240
       ],
       "id": "a43c9174-0313-4541-8028-7e8bdefd70e8",
@@ -840,7 +841,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1620,
+        1632,
         -560
       ],
       "id": "ea4447c8-b4d9-406d-bbec-4ac1a7eda8ad",
@@ -853,38 +854,11 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1300,
+        1312,
         -560
       ],
       "id": "e5ddab81-5efb-4434-9c4b-380f48a565e8",
       "name": "Google Drive CSV Reader"
-    },
-    {
-      "parameters": {
-        "operation": "download",
-        "fileId": {
-          "__rl": true,
-          "value": "1joaH_VEwnSlqOMii83Bz_ZECkg1TLkXB",
-          "mode": "list",
-          "cachedResultName": "Business_Configurations2.csv",
-          "cachedResultUrl": "https://drive.google.com/file/d/1joaH_VEwnSlqOMii83Bz_ZECkg1TLkXB/view?usp=drivesdk"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.googleDrive",
-      "typeVersion": 3,
-      "position": [
-        1020,
-        -560
-      ],
-      "id": "78cd78c2-4921-4af7-b01b-036682021892",
-      "name": "Google Drive",
-      "credentials": {
-        "googleDriveOAuth2Api": {
-          "id": "lml9nJV2CfuBJkTv",
-          "name": "Google Drive account"
-        }
-      }
     },
     {
       "parameters": {},
@@ -892,7 +866,7 @@
       "typeVersion": 1,
       "position": [
         1120,
-        -340
+        -336
       ],
       "id": "289e190d-4519-46e1-a088-482971082dcc",
       "name": "No Operation, do nothing"
@@ -903,10 +877,62 @@
       "typeVersion": 1,
       "position": [
         3440,
-        920
+        928
       ],
       "id": "f2106896-484e-41e9-8bc2-051ce88c222c",
       "name": "No Operation, do nothing1"
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1QNBcLsBOHDbNVJA5NGTA8u9NNHfHffXQ",
+          "mode": "list",
+          "cachedResultName": "Business_Configurations.csv",
+          "cachedResultUrl": "https://drive.google.com/file/d/1QNBcLsBOHDbNVJA5NGTA8u9NNHfHffXQ/view?usp=drivesdk"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1024,
+        -560
+      ],
+      "id": "78cd78c2-4921-4af7-b01b-036682021892",
+      "name": "Download file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "lml9nJV2CfuBJkTv",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "gpt-4o"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        2704,
+        240
+      ],
+      "id": "63beac09-7c3c-4f72-ad46-43f1559dec22",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "4mFG6JwySFJg6M6W",
+          "name": "OpenAi account"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -1323,7 +1349,7 @@
       "main": [
         [
           {
-            "node": "Google Drive",
+            "node": "Download file",
             "type": "main",
             "index": 0
           }
@@ -1410,7 +1436,12 @@
         ]
       ]
     },
-    "Google Drive": {
+    "No Operation, do nothing": {
+      "main": [
+        []
+      ]
+    },
+    "Download file": {
       "main": [
         [
           {
@@ -1421,9 +1452,15 @@
         ]
       ]
     },
-    "No Operation, do nothing": {
-      "main": [
-        []
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "GENERATE SHORTFORM TEXT",
+            "type": "ai_languageModel",
+            "index": 1
+          }
+        ]
       ]
     }
   },
@@ -1431,7 +1468,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "c8c7f926-91cb-477e-a28c-dc428d2fbd19",
+  "versionId": "87444e0c-6d42-494b-ba7b-a20b9d95ae75",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "a44da71e50fc9a6e7a6a138b723f7a7514d28d96ef739ef2e0ac8073ec3a6d99"
