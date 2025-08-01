@@ -1,0 +1,38 @@
+# ROLE
+You are Claude, acting as a full-stack AI marketing strategist for a start-up about to launch a new product.
+
+# INPUTS
+product:      328 Football Training Sessions
+audience:     New or inexperienced football coaches
+launch_goal:  Sales
+brand_tone:   see https://360tft.com/l/TrainingSessionsForAllAges for the tone
+
+# TASKS
+1. Customer Insight
+   • Build an Ideal Customer Profile (ICP).
+   • List top pain points, desired gains, and buying triggers.
+   • Suggest 3 positioning angles that will resonate.
+
+2. Conversion Messaging
+   • Craft a hook-driven landing page (headline, sub-headline, CTA).
+   • Give 3 viral headline options.
+   • Produce a Messaging Matrix: Pain → Promise → Proof → CTA.
+
+3. Content Engine
+   • Create a 7-day content plan for X/Twitter **and** LinkedIn.
+   • Include daily post titles, themes, and tone tips.
+   • Add 1 short-form video idea that supports the plan.
+
+4. Email Playbook
+   • Write 3 cold-email variations:
+     ① Value-first, ② Problem-Agitate-Solve, ③ Social-proof / case-study.
+
+5. SEO Fast-Track
+   • Propose 1 SEO topic cluster that aligns with the product.
+   • Give 5 blog-post titles targeting mid → high-intent keywords.
+   • Outline a “pillar + supporting posts” structure.
+
+# OUTPUT RULES
+• Use clear section headers (e.g. **ICP**, **Landing Copy**, **SEO Titles**).
+• Format in Markdown for easy reading.
+• No chain-of-thought or reasoning—deliver polished results only.

@@ -1,0 +1,44 @@
+{
+  "name": "claude-code-configs",
+  "version": "1.0.0",
+  "description": "Configuration files and utilities for Claude Code integrations with Notion, Google Drive, and Anthropic APIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "claude",
+    "notion",
+    "google-drive",
+    "anthropic",
+    "n8n",
+    "automation",
+    "workflow"
+  ],
+  "author": "Claude Code User",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "googleapis": "^118.0.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "eslint": "^8.39.0",
+    "prettier": "^2.8.8"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/claude-code-configs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/claude-code-configs/issues"
+  },
+  "homepage": "https://github.com/your-username/claude-code-configs#readme"
+}

@@ -1,0 +1,32 @@
+Client makes contact.
+
+Either arrange a call (1. Strategy Call Framework) or email (1.1. Initial Contact).  If the call happens first, send the email second.   If the email is first, the call is next.
+
+Before the meeting, you need some exmaple content so do the following
+
+Step 1:  Create the client folder in the Clients folder
+
+Step 2:  Add the business specific prompt (1.2. Business Config Prompt) to a Business_Configurations Entry Prompt files
+
+Step 3:  Run the prompt
+
+Step 4.  Add the output to the Business_Config CSV
+
+Step 5:  Add the rest of the output to the Business_Configurations Entry Output file 
+
+Step 6:  Add the CSV to the database
+
+Step 7:  Add the content specific prompt (2.1. Business Config Prompt) to a Business_Configurations Entry Prompt files
+
+Step 8:  Run the prompt
+
+Step 9.  Add the output to the Content Entry CSV
+
+Step 10:  Add the rest of the output to the Content Entry Output file 
+
+Step 11:  Select the best example for the meeting or as an example to send
+
+Step 12:  Run the Upsell Opportunities Promp (16. Upsell Opportunities Prompt) to get an idea of upsell opportunities.  Don't send these to the potential client, just mention it
+
+
+

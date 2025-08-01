@@ -1,0 +1,10 @@
+### Required Fields (Cannot be empty):
+- **ID**: Generate next sequential number (start with 31)
+- **Title**: Exact business name as used publicly
+- **Business Category**: Select from existing categories
+- **Active Status**: Set to "Yes" for new additions
+- **Target Audience**: Detailed customer persona (200+ words)
+- **Brand Voice Guidelines**: Professional tone description (150+ words)
+- **Google Drive Parent Folder**: Business_Name_No_Spaces
+- **Created Date**: Today's date
+- **Last Modified**: Today's date
