@@ -1,5 +1,5 @@
 {
-  "name": "Social Media Posting - From CSV",
+  "name": "1.Social Media Posting - From CSV",
   "nodes": [
     {
       "parameters": {
@@ -41,7 +41,7 @@
       "parameters": {
         "resource": "image",
         "model": "gpt-image-1",
-        "prompt": "={{ $('Optimize Image Prompt').item.json.optimizedPrompt }}, minimal text or logos, unless you have access to the businesses logo via a reliable online source like the business website.  If you are using text, please ensure the correct spelling is used.",
+        "prompt": "={{ $('GENERATE PROMPT').item.json.output }}, minimal text or logos, unless you have access to the businesses logo via a reliable online source like the business website.  If you are using text, please ensure the correct spelling is used.",
         "options": {
           "quality": "medium",
           "size": "1024x1024"
@@ -51,8 +51,8 @@
       "name": "OPENAI GENERATES IMAGE",
       "type": "@n8n/n8n-nodes-langchain.openAi",
       "position": [
-        912,
-        464
+        3568,
+        256
       ],
       "typeVersion": 1.8,
       "credentials": {
@@ -224,13 +224,13 @@
     },
     {
       "parameters": {
-        "jsCode": "// MINIMAL TEST VERSION - Replace your \"Optimize Image Prompt\" node with this\n// This will test if the issue is with the return object complexity\n\nconsole.log('=== MINIMAL OPTIMIZE IMAGE PROMPT TEST ===');\n\n// Get input data\nconst inputData = $input.item.json;\nconsole.log('Input received, keys:', Object.keys(inputData));\n\n// Get the prompt\nlet fullPrompt = inputData?.output || 'Professional business image showing quality service';\nconsole.log('Prompt length:', fullPrompt.length);\n\n// Simple truncation if needed\nlet optimizedPrompt = fullPrompt;\nif (optimizedPrompt.length > 950) {\n  optimizedPrompt = optimizedPrompt.substring(0, 900) + ', professional quality, no text or logos';\n}\n\nconsole.log('Optimized length:', optimizedPrompt.length);\nconsole.log('✅ Processing complete');\n\n// MINIMAL return object - just the essentials\nreturn {\n  json: {\n    optimizedPrompt: optimizedPrompt,\n    originalLength: fullPrompt.length,\n    finalLength: optimizedPrompt.length,\n    success: true\n  }\n};"
+        "jsCode": "// Minimal - just set optimizedPrompt for next node\nreturn [{\n  json: {\n    optimizedPrompt: $input.item.json.output\n  }\n}];"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3488,
-        208
+        3696,
+        32
       ],
       "id": "21d6ea07-92b8-480e-9bf7-e29e42e3be1b",
       "name": "Optimize Image Prompt",
@@ -887,10 +887,10 @@
         "operation": "download",
         "fileId": {
           "__rl": true,
-          "value": "1QNBcLsBOHDbNVJA5NGTA8u9NNHfHffXQ",
+          "value": "1MSjKBDgi3mWE99rSlWAK1XgSSSoYV62v",
           "mode": "list",
-          "cachedResultName": "Business_Configurations.csv",
-          "cachedResultUrl": "https://drive.google.com/file/d/1QNBcLsBOHDbNVJA5NGTA8u9NNHfHffXQ/view?usp=drivesdk"
+          "cachedResultName": "Content Entry.csv",
+          "cachedResultUrl": "https://drive.google.com/file/d/1MSjKBDgi3mWE99rSlWAK1XgSSSoYV62v/view?usp=drivesdk"
         },
         "options": {}
       },
@@ -952,7 +952,7 @@
       "main": [
         [
           {
-            "node": "Optimize Image Prompt",
+            "node": "OPENAI GENERATES IMAGE",
             "type": "main",
             "index": 0
           }
@@ -1038,13 +1038,7 @@
     },
     "Optimize Image Prompt": {
       "main": [
-        [
-          {
-            "node": "OPENAI GENERATES IMAGE",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Debug Content Generation": {
@@ -1468,11 +1462,24 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "87444e0c-6d42-494b-ba7b-a20b9d95ae75",
+  "versionId": "a309e48e-3b32-43a0-b100-7d015f2cdfb3",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "a44da71e50fc9a6e7a6a138b723f7a7514d28d96ef739ef2e0ac8073ec3a6d99"
   },
   "id": "RPnsZ1Epc5MVGvRu",
-  "tags": []
+  "tags": [
+    {
+      "createdAt": "2025-07-04T19:31:28.432Z",
+      "updatedAt": "2025-07-04T19:31:28.432Z",
+      "id": "AYcOhUXPsORts4eL",
+      "name": "Social Media"
+    },
+    {
+      "createdAt": "2025-07-04T19:57:21.668Z",
+      "updatedAt": "2025-07-04T19:57:21.668Z",
+      "id": "sifZUBrRJC0DzZkw",
+      "name": "Ready"
+    }
+  ]
 }
