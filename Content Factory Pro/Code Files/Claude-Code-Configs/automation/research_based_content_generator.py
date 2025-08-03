@@ -224,6 +224,26 @@ class ResearchBasedContentGenerator:
             # Fallback for any other business
             return []
     
+    def _get_clean_cta(self, business_config: Dict, content_type: str) -> str:
+        """Extract a single, clean CTA from business configuration"""
+        
+        cta_template = business_config.get('cta_template', '')
+        
+        # Handle businesses with multiple CTA options (like BGK Goalkeeping)
+        if 'PRIMARY CTA OPTIONS:' in cta_template or 'FOR TRAINING INQUIRIES:' in cta_template:
+            # Extract the first clean CTA option
+            lines = cta_template.split('\n')
+            for line in lines:
+                if line.startswith('"') and line.endswith('"'):
+                    return line.strip('"')
+            
+            # Fallback: create a generic CTA based on business name
+            business_name = business_config.get('business_name', 'us')
+            return f"Ready to experience the difference? Contact {business_name} today to learn more."
+        
+        # For businesses with clean CTAs (like Athlete Recovery Zone)
+        return cta_template.strip()
+    
     def generate_content_with_disclaimer(self, idea: Dict, business_config: Dict, content_number: int, month: str) -> str:
         """Generate content with disclaimer and research integration"""
         
@@ -231,8 +251,9 @@ class ResearchBasedContentGenerator:
         business_name = business_config['business_name']
         research_info = self.research_data.get(business_name, {})
         
-        # Create hook-driven shortform content
-        shortform_content = f"{idea['hook']}! {idea['brief'][:120]}... {business_config['cta_template']}"
+        # Create clean, complete shortform content with proper CTA
+        clean_cta = self._get_clean_cta(business_config, idea['type'])
+        shortform_content = f"{idea['hook']}! {idea['brief']} {clean_cta}"
         
         # Enhanced longform content with research integration
         longform_content = f"""# {idea['topic']}
@@ -259,7 +280,7 @@ Based on real customer feedback and our proven track record, {business_name} has
 
 ## Ready to Experience the Difference?
 
-{business_config['cta_template']}
+{clean_cta}
 
 ---
 *{research_info.get('services', 'Professional services tailored to your needs.')}*"""

@@ -1,0 +1,110 @@
+CONTENT FACTORY PRO - OPTIMIZED PROMPTS IMPLEMENTATION GUIDE
+==============================================================
+
+This folder contains the optimized prompts created by the prompt-engineer analysis.
+These replace the existing complex prompts in your n8n workflow.
+
+FILES INCLUDED:
+- 01_main_text_generation.txt - For GENERATE TEXT node
+- 02_image_prompt_generation.txt - For GENERATE PROMPT node  
+- 03_shortform_content_generation.txt - For GENERATE SHORTFORM TEXT node
+- 04_quality_validation.txt - NEW quality control node
+- 05_research_integration.txt - Enhanced research processing
+
+IMPLEMENTATION STEPS:
+=====================
+
+1. BACKUP YOUR CURRENT WORKFLOW
+   - Export your existing n8n workflow as JSON backup
+   - Save current prompts separately before replacing
+
+2. UPDATE EXISTING NODES:
+   
+   NODE: "GENERATE TEXT"
+   - Copy content from: 01_main_text_generation.txt
+   - Verify parameters match: {{business_name}}, {{topic}}, {{content_type}}, etc.
+   
+   NODE: "GENERATE PROMPT" 
+   - Copy content from: 02_image_prompt_generation.txt
+   - Ensure {{business_name}}, {{main_content}}, {{platform}} are connected
+   
+   NODE: "GENERATE SHORTFORM TEXT"
+   - Copy content from: 03_shortform_content_generation.txt
+   - Update {{full_content}}, {{platforms_array}} parameters
+
+3. ADD NEW QUALITY CONTROL NODE:
+   - Create new Anthropic Claude node
+   - Copy content from: 04_quality_validation.txt
+   - Add logic to regenerate if NEEDS REVISION
+   - Route APPROVED content to final output
+
+4. ENHANCE RESEARCH PROCESSING:
+   - Update research node with: 05_research_integration.txt
+   - Ensure JSON output parsing is configured
+   - Connect structured insights to content generation
+
+PARAMETER MAPPING:
+==================
+
+Ensure these workflow variables are available:
+- {{business_name}} - Client business name
+- {{topic}} - Content topic/theme
+- {{content_type}} - Educational/Promotional/Behind-the-Scenes/Success Story
+- {{platform}} - Target social media platform
+- {{tone}} - Brand voice/tone
+- {{research_content}} - Research insights
+- {{main_content}} - Generated content for image prompts
+- {{brand_style}} - Visual style preferences
+
+ERROR HANDLING:
+===============
+
+Add these workflow conditions:
+- If quality score < 4: Loop back to regeneration
+- If no research provided: Use fallback content
+- If platform not specified: Default to Facebook
+- If generation fails: Retry once, then alert
+
+TESTING CHECKLIST:
+==================
+
+Before going live:
+□ Test each prompt with sample data
+□ Verify British English output
+□ Check character counts for each platform
+□ Validate CTA relevance and clarity
+□ Confirm hashtag placement
+□ Test quality validation scoring
+□ Verify research integration works
+
+EXPECTED IMPROVEMENTS:
+======================
+
+After implementation:
+- 50-70% reduction in prompt complexity
+- 90% improvement in content consistency  
+- Elimination of truncation issues
+- Automated quality control with regeneration
+- Better British English compliance
+- More relevant and engaging content
+
+SUPPORT:
+========
+
+If you encounter issues:
+1. Check parameter mapping first
+2. Verify n8n node configuration
+3. Test individual prompts separately
+4. Compare outputs with previous system
+
+ROLLBACK PLAN:
+==============
+
+If issues occur:
+1. Restore from JSON backup
+2. Gradually implement one prompt at a time
+3. A/B test old vs new prompts
+4. Monitor quality metrics
+
+Last Updated: 2025-08-03
+Created by: Claude Code Prompt Engineering Analysis
