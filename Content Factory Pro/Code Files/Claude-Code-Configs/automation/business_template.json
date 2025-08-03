@@ -1,0 +1,14 @@
+{
+  "name": "Example Business Name",
+  "contact_name": "John Smith",
+  "phone": "555-123-4567",
+  "email": "contact@business.com",
+  "website": "https://www.business.com",
+  "description": "Brief description of what the business does",
+  "target_audience": "Describe their ideal customers, demographics, pain points",
+  "brand_voice": "Describe their communication style (professional, friendly, etc.)",
+  "social_platforms": "Facebook, Instagram, LinkedIn",
+  "business_category": "Professional Services",
+  "location": "123 Main St, City, State",
+  "notes": "Any additional notes about the business"
+}

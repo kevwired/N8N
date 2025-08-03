@@ -1,0 +1,15 @@
+TEST FILE - Content Factory Pro Google Drive Integration
+=========================================================
+
+Generated: 2025-08-03 02:35
+Purpose: Testing Google Drive API upload functionality
+
+This is a test file to verify Google Drive upload capability.
+
+Service Account: content-factory-uploader@n8n-skool-automation.iam.gserviceaccount.com
+Target Location: Google Drive Root > Test_Upload_Folder
+
+If you can see this file in Google Drive, the integration is working correctly.
+
+Contact: admin@kevinrmiddleton.com
+System: Content Factory Pro

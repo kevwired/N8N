@@ -1,0 +1,63 @@
+# Sensitive configuration files - NEVER commit these
+.env
+config.json
+credentials/
+*.key
+*-key.json
+.claude/
+*.bat
+
+# OAuth and API credentials
+oauth_credentials.json
+client_secret.json
+token.pickle
+*.pickle
+*api_key*
+*secret*
+*credentials*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp

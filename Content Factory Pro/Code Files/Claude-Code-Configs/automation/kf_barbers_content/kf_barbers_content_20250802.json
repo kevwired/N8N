@@ -1,0 +1,168 @@
+{
+  "business": {
+    "business_name": "KF Barbers",
+    "category": "Health & Fitness",
+    "target_audience": "Local men aged 25-55 in Arbroath and surrounding areas seeking professional barbering services",
+    "brand_voice": "Professional yet approachable, confident in expertise, family-friendly, community-focused",
+    "hashtags": "#ArbbroathBarber #KFBarbers #MensHaircut #TraditionalBarber #ScotlandBarber #BeardTrim #HotShave #KidsHaircut #LocalBarber #QualityBarber",
+    "cta": "Book your appointment today at KF Barbers - call 07449 761659 or book online. Walk-ins welcome when possible.",
+    "services": [
+      "men's haircuts",
+      "beard trimming",
+      "hot shaves",
+      "head shaves",
+      "kids haircuts"
+    ],
+    "location": "109 High Street, Arbroath DD11 1DP",
+    "hours": "Mon-Fri 8:00am-6:00pm, Sat 7:30am-5:00pm",
+    "phone": "07449 761659"
+  },
+  "posts": [
+    {
+      "type": "Educational",
+      "title": "How Often Should You Get a Haircut?",
+      "content": "For the sharpest look, most men benefit from a trim every 3-4 weeks. This keeps your style fresh and prevents that 'overgrown' look. Regular maintenance also makes each visit quicker and helps us maintain your preferred style perfectly. At KF Barbers, we'll help you establish the ideal schedule based on your hair type and lifestyle.",
+      "hashtags": [
+        "#BarberTips",
+        "#MensGrooming",
+        "#ArbbroathBarber",
+        "#KFBarbers",
+        "#HaircareTips"
+      ]
+    },
+    {
+      "type": "Educational",
+      "title": "The Benefits of a Traditional Hot Shave",
+      "content": "Experience the luxury of a traditional hot shave at KF Barbers. Hot towels open pores, quality shaving cream softens bristles, and our skilled hands ensure the smoothest finish. It's not just a shave - it's 30 minutes of relaxation that leaves you looking and feeling your absolute best.",
+      "hashtags": [
+        "#HotShave",
+        "#TraditionalBarber",
+        "#BeardCare",
+        "#ArbbroathBarber",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Educational",
+      "title": "Kids' First Haircut Tips",
+      "content": "Bringing your little one for their first haircut? We've got you covered! Our experienced barbers know how to make children feel comfortable and turn a potentially scary experience into a fun adventure. Pro tip: morning appointments work best when kids are fresh and happy. Book today!",
+      "hashtags": [
+        "#KidsHaircut",
+        "#FirstHaircut",
+        "#FamilyBarber",
+        "#ArbbroathFamilies",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Educational",
+      "title": "Beard Maintenance Between Visits",
+      "content": "Keep your beard looking sharp between trims! Use a quality beard oil daily to maintain softness and prevent itching. Comb regularly to train hair growth and trim strays with scissors. When it's time for professional shaping, our expert barbers will have you looking distinguished again.",
+      "hashtags": [
+        "#BeardCare",
+        "#BeardTrim",
+        "#MensGrooming",
+        "#BarberAdvice",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Behind-the-Scenes",
+      "title": "Early Bird Special",
+      "content": "Did you know we open at 7:30am on Saturdays? Perfect for busy dads who want to look sharp before weekend activities, or anyone who prefers beating the rush. There's something special about starting your weekend with a fresh cut and a great conversation. See you bright and early!",
+      "hashtags": [
+        "#EarlyBird",
+        "#SaturdayBarber",
+        "#ArbbroathBusiness",
+        "#WeekendReady",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Behind-the-Scenes",
+      "title": "Why We Love What We Do",
+      "content": "After years perfecting our craft, what keeps us passionate? It's the smile when a young lad sees his fresh cut, the confidence boost we give before job interviews, and being part of Arbroath's community. Every cut tells a story, and we're honored to be part of yours.",
+      "hashtags": [
+        "#LocalBusiness",
+        "#CommunityBarber",
+        "#ArbbroathPride",
+        "#PassionForCraft",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Promotional",
+      "title": "Walk-Ins Welcome!",
+      "content": "No appointment? No problem! While we recommend booking ahead to secure your preferred time, we always try to accommodate walk-ins when possible. Pop by KF Barbers at 109 High Street - if we can fit you in, we will. Quality service doesn't always need an appointment!",
+      "hashtags": [
+        "#WalkInsWelcome",
+        "#BarberShop",
+        "#ArbbroathHighStreet",
+        "#ConvenientService",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Promotional",
+      "title": "Father & Son Special",
+      "content": "Make it a tradition! Bring your son for his haircut and create memories that last. Our patient barbers ensure even the most nervous young customers leave happy and looking smart. Book your father-son appointments together - because looking good runs in the family!",
+      "hashtags": [
+        "#FatherSon",
+        "#FamilyBarber",
+        "#KidsWelcome",
+        "#ArbbroathFamilies",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Promotional",
+      "title": "Book Your Weekend Appointment",
+      "content": "Saturdays filling up fast! Don't miss out on your weekend grooming session. Whether you need a quick trim before the match or a full service including hot shave, secure your spot now. Call 07449 761659 or book online. Your perfect weekend starts with a perfect cut!",
+      "hashtags": [
+        "#BookNow",
+        "#SaturdayAppointments",
+        "#WeekendBarber",
+        "#ArbbroathBarber",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Customer Success",
+      "title": "5-Star Service Every Time",
+      "content": "\"Best barber in Arbroath! They're brilliant with my 4-year-old who usually hates haircuts. Now he asks when we can go back!\" - Just one of our 215+ five-star reviews. Thank you for trusting KF Barbers with your family's grooming needs. Your satisfaction is our priority!",
+      "hashtags": [
+        "#CustomerReview",
+        "#5StarService",
+        "#HappyCustomers",
+        "#TestimonialTuesday",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Customer Success",
+      "title": "Transformations That Matter",
+      "content": "From shaggy to sharp in 30 minutes! We love helping our customers look and feel their best, whether it's for a special occasion or just because you deserve it. Every transformation at KF Barbers is crafted with skill, care, and attention to what makes YOU look great.",
+      "hashtags": [
+        "#Transformation",
+        "#BeforeAfter",
+        "#BarberSkills",
+        "#LookGoodFeelGood",
+        "#KFBarbers"
+      ]
+    },
+    {
+      "type": "Customer Success",
+      "title": "Community Trust",
+      "content": "Serving Arbroath with pride! When three generations of the same family trust you with their haircuts, you know you're doing something right. From granddad's traditional short back and sides to grandson's modern fade, KF Barbers has the skills for every generation.",
+      "hashtags": [
+        "#CommunityTrust",
+        "#GenerationalBarber",
+        "#LocalLegend",
+        "#ArbbroathPride",
+        "#KFBarbers"
+      ]
+    }
+  ],
+  "generated_date": "2025-08-02T19:03:04.899514",
+  "total_posts": 12
+}

@@ -1,0 +1,170 @@
+# Business Research & CSV Generation Prompt for Content Factory Pro
+
+## ROLE
+You are a business intelligence researcher for Content Factory Pro, specializing in comprehensive business analysis for social media content generation services. Your task is to research a business thoroughly and create a complete CSV import row for the Business_Configurations database.
+
+## BUSINESS INFORMATION - ATHLETE RECOVERY ZONE
+
+### VERIFIED CLIENT SUBMISSION DATA (Primary Source)
+**Client Contact**: Calum Brodie
+**Phone**: 07862663535
+**Email**: calumbrodie21@gmail.com
+**Website**: https://www.athleterecoveryzone.co.uk/
+**Preferred Contact**: Email
+
+### CURRENT BUSINESS DESCRIPTION
+The Athlete Recovery Zone is a dedicated wellness and recovery space designed to help athletes, fitness enthusiasts, and active individuals recharge both physically and mentally. Our facility blends evidence-based recovery tools with a calming, modern environment to support optimal performance, reduce fatigue, and promote long-term wellbeing.
+
+Whether you're recovering from intense training, managing muscle soreness, or simply prioritising rest, the Athlete Recovery Zone provides everything you need to restore balance. Our recovery space is also useful for people with a variety of conditions such as gym anxiety, poor circulation etc.
+
+### FACILITY SPECIFICATIONS
+**Location**: Conveniently located at Skyaxe fighting gym in Dundee city centre, easily accessible whether you're coming from the gym, track, or training field.
+
+**Complete Facility List**:
+- Infrared Sauna
+- Recovery Room with compression boots and massage chair
+- Private Showers and Changing Rooms
+- Ice Bath
+- TENS therapy pods
+- Yoga space with stretching guide
+- Stretching bands
+- Foam rollers
+- Small and large massage guns
+- Acu-pressure mat
+- Calming lounge space for post-session relaxation
+
+### TARGET AUDIENCE (CLIENT SPECIFIED)
+People with an interest in sports in Dundee, Perth, Fife and Angus
+
+### BRAND VOICE GUIDELINES (CLIENT SPECIFIED)
+We are a science-backed recovery space helping to modernise our customers' physical and mental wellness. Our voice reflects the professionalism of a performance facility and the ability for our customers to tailor their own recovery journey around the tools they have at their disposal. We're confident, educational and approachable - never preach or overhyped.
+
+**Tone**: motivational, health-focused, inclusive, knowledgeable, calm
+
+### SOCIAL MEDIA PLATFORMS
+Facebook, Instagram
+
+### CONTENT BRIEF (CLIENT SPECIFIED)
+Educational content designed to help encourage people to take charge of, and understand why recovery is important to them. Explanations of the benefits of the equipment within the recovery zone is key towards getting individuals, clubs and sports teams to make use of it.
+
+### SEO KEYWORDS (CLIENT PROVIDED)
+**Primary Keywords**:
+- athlete recovery zone
+- sports recovery centre
+- recovery room for athletes
+- infrared sauna for recovery
+- compression therapy near me
+- Normatec compression boots
+- athletic recovery sessions
+- post workout recovery
+- recovery services for athletes
+- sports recovery facility dundee
+- best athlete recovery near me
+
+**Local Keywords**:
+- athlete recovery Dundee
+- sports recovery in Dundee
+- sauna for athletes Dundee
+- recovery sessions near Dundee
+- where to recover after gym Dundee
+- compression therapy near me Dundee
+
+## ENHANCED BUSINESS CONTEXT FOR DATABASE ENTRY
+
+### BUSINESS CATEGORY
+Health & Fitness
+
+### UNIQUE SELLING PROPOSITIONS
+1. Comprehensive recovery ecosystem under one facility
+2. Science-backed approach with evidence-based recovery tools
+3. Modern, calming environment designed for optimal recovery
+4. Accessible location in Dundee city centre
+5. Inclusive approach welcoming all fitness levels
+6. Specialises in conditions beyond sports (gym anxiety, poor circulation)
+7. Complete recovery journey with multiple modalities
+8. Professional-grade equipment in welcoming environment
+
+### TARGET AUDIENCE EXPANSION
+**Primary Segments**:
+1. **Performance Athletes** (Dundee, Perth, Fife, Angus)
+   - Regular trainers seeking faster recovery
+   - Competition athletes requiring optimal performance
+   - Goal: Enhanced training consistency and performance
+
+2. **Fitness Enthusiasts** (Regional coverage)
+   - Gym members dealing with soreness and fatigue
+   - Active individuals prioritising wellness
+   - Goal: Better recovery and training quality
+
+3. **Wellness Seekers** (Broader demographic)
+   - People managing gym anxiety
+   - Individuals with circulation issues
+   - Goal: Mental and physical restoration
+
+4. **Sports Teams & Clubs** (Tayside region)
+   - Grassroots teams needing recovery solutions
+   - Amateur clubs seeking competitive advantage
+   - Goal: Team-wide recovery and injury prevention
+
+### BRAND VOICE REFINED
+**Core Approach**: Science-backed recovery expertise with approachable, inclusive delivery
+**Professional Positioning**: Performance facility professionalism with personalised recovery guidance
+**Communication Style**: Confident, educational, approachable - never preachy or overhyped
+**Tone Attributes**: Motivational, health-focused, inclusive, knowledgeable, calm
+
+### CONTENT STRATEGY FOCUS
+**Educational Priority**: Equipment benefits explanation and recovery science education
+**Target Outcomes**: Encourage personal responsibility for recovery and wellness
+**Audience Engagement**: Individuals, clubs, and sports teams utilising facility services
+**Content Approach**: Evidence-based explanations with practical applications
+
+## CSV FIELD COMPLETION REQUIREMENTS
+
+### BUSINESS CONTEXT
+Athlete Recovery Zone is a dedicated wellness and recovery facility located at Skyaxe fighting gym in Dundee city centre. The business combines evidence-based recovery tools with a modern, calming environment to serve athletes, fitness enthusiasts, and individuals with various wellness needs including gym anxiety and poor circulation. The facility offers comprehensive recovery services including infrared sauna, ice bath, compression therapy, TENS therapy, and specialised recovery spaces.
+
+### TARGET AUDIENCE
+People with an interest in sports across Dundee, Perth, Fife and Angus, including performance athletes seeking faster recovery, fitness enthusiasts managing training demands, wellness seekers addressing specific conditions like gym anxiety or poor circulation, and sports teams requiring recovery solutions. The facility serves all fitness levels with an inclusive, science-backed approach to recovery and wellness.
+
+### BRAND VOICE
+Science-backed recovery facility with professional expertise delivered through an approachable, inclusive manner. Voice reflects performance facility professionalism while empowering customers to tailor their recovery journey. Communication is confident, educational, and approachable - never preachy or overhyped. Tone is motivational, health-focused, inclusive, knowledgeable, and calm.
+
+### CONTENT REQUIREMENTS
+Educational content designed to encourage personal responsibility for recovery while explaining the benefits of specific equipment and recovery modalities. Focus on helping individuals, clubs, and sports teams understand why recovery is important and how to utilise the facility's comprehensive recovery tools effectively.
+
+## GLOBAL CONTENT RULES (10 SPECIFIC RULES)
+
+1. Always emphasise science-backed recovery methods with evidence-based explanations
+2. Include Dundee, Perth, Fife, and Angus location references for regional connection
+3. Highlight comprehensive facility offerings (infrared sauna, ice bath, compression therapy, TENS therapy)
+4. Use professional recovery terminology while maintaining accessibility for all fitness levels
+5. Reference inclusive approach welcoming people with gym anxiety, poor circulation, and various conditions
+6. Emphasise modern, calming environment and professional-grade equipment
+7. Connect recovery science to practical performance improvements and wellness benefits
+8. Position as educational resource for recovery knowledge and proper equipment usage
+9. Include team and club recovery solutions alongside individual services
+10. Maintain approachable, confident tone - never preachy or overhyped in messaging
+
+"Research and update CSV import for: Athlete Recovery Zone
+Contact: Calum Brodie (calumbrodie21@gmail.com, 07862663535)
+https://www.athleterecoveryzone.co.uk/"
+
+**Database entry updated with verified client submission information.**
+
+---
+
+## EXECUTE CSV GENERATION
+
+Based on the verified client information above, generate the complete CSV import row:
+
+### CSV HEADER ROW:
+```
+ID,Title,Business Category,Active Status,Target Audience,GENERATE TEXT - System Message,Content Length Limit,Brand Voice Guidelines,Hashtag Strategy,Call to Action Template,GENERATE PROMPT - User Message,GENERATE PROMPT - System Message,Image Style Preferences,Brand Colors,Google Drive Parent Folder,Social Platforms,SEO Strategy Template,Website URLs,Business Owner,Social Handle,Created Date,Last Modified,Notes,Global Content Rules,Email,Phone
+```
+
+### CSV DATA ROW:
+```
+29,Athlete Recovery Zone,Health & Fitness,Yes,"People with an interest in sports across Dundee, Perth, Fife and Angus, including performance athletes seeking faster recovery (35%), wellness-focused professionals prioritising health and stress management (30%), sports teams and clubs requiring group recovery solutions (20%), and recreational fitness enthusiasts learning proper recovery protocols (15%). Geographic focus: Dundee (primary), Perth (secondary), Fife and Angus (tertiary). Demographics: Age 22-60, income £35k-100k annually, regular exercise participants dealing with training demands, muscle soreness, and recovery optimisation needs.","You are writing content for Athlete Recovery Zone, a dedicated wellness and recovery facility located at Skyaxe fighting gym in Dundee city centre. BUSINESS CONTEXT: ARZ combines evidence-based recovery tools with a modern, calming environment to serve athletes, fitness enthusiasts, and individuals with various wellness needs including gym anxiety and poor circulation. The facility offers comprehensive recovery services including infrared sauna, ice bath, compression therapy, TENS therapy, yoga space, massage equipment, and specialised recovery lounges. TARGET AUDIENCE: People with sports interests across Dundee, Perth, Fife and Angus seeking professional recovery solutions, performance optimisation, and wellness support. CONTENT REQUIREMENTS: Educational content explaining recovery equipment benefits and encouraging personal responsibility for recovery and wellness. BRAND VOICE: Science-backed recovery expertise delivered through approachable, inclusive manner reflecting performance facility professionalism while empowering customers to tailor their recovery journey.",50,"Science-backed recovery facility with professional expertise delivered through an approachable, inclusive manner. Voice reflects performance facility professionalism while empowering customers to tailor their recovery journey around available tools. Communication is confident, educational, and approachable - never preachy or overhyped. Tone: motivational, health-focused, inclusive, knowledgeable, calm. Focus on evidence-based recovery methods with practical applications for all fitness levels.","#AthleteRecoveryZone #SportsRecoveryDundee #RecoveryZone #InfraredSauna #IceBathTherapy #CompressionTherapy #TENSTherapy #SportsRecovery #AthleteWellness #RecoveryScience #PerformanceRecovery #DundeeWellness #TaysideAthletes #RecoveryExperts #SportsMedicine","Ready to experience the difference that professional recovery makes? Book your comprehensive recovery session at Athlete Recovery Zone and discover how evidence-based recovery tools can transform your training and wellness journey. Contact us today to start your personalised recovery experience.","Please provide the specific content topic you would like me to create content about for Athlete Recovery Zone.","You are an expert at creating specific image prompts for Athlete Recovery Zone content. Create professional sports recovery imagery that showcases the facility's advanced equipment, modern environment, and inclusive atmosphere. Focus on evidence-based recovery tools including infrared sauna, ice bath, compression therapy, TENS therapy, and recovery spaces. Show both elite athletes and everyday fitness enthusiasts benefiting from recovery services in a clean, welcoming facility environment.","Modern sports recovery facility showcasing advanced recovery equipment in clean, professional environment. Focus on infrared sauna, ice bath, compression therapy equipment, TENS therapy pods, yoga spaces, and modern recovery lounges. Professional photography emphasising cutting-edge technology, inclusive atmosphere, and proper recovery techniques.","Primary: Performance Blue (#1E40AF), Recovery Teal (#0D9488), Energy Orange (#EA580C), Clean White (#FFFFFF). Modern, high-performance palette emphasising technology and wellness.",Athlete_Recovery_Zone,"Facebook, Instagram","PRIMARY KEYWORDS: athlete recovery zone, sports recovery centre, recovery room for athletes, infrared sauna for recovery, compression therapy near me, Normatec compression boots, athletic recovery sessions, post workout recovery, recovery services for athletes, sports recovery facility dundee, best athlete recovery near me. LOCAL KEYWORDS: athlete recovery Dundee, sports recovery in Dundee, sauna for athletes Dundee, recovery sessions near Dundee, where to recover after gym Dundee, compression therapy near me Dundee. CONTENT STRATEGY: Educational recovery science content, equipment benefit explanations, performance improvement guides, and facility experience content targeting Dundee, Perth, Fife, and Angus sports community.",https://www.athleterecoveryzone.co.uk/,Calum Brodie,@athleterecoveryzone,July 30 2025,July 30 2025,"Updated with verified client submission from Calum Brodie. Business located at Skyaxe fighting gym in Dundee city centre. Comprehensive facility includes infrared sauna, ice bath, compression therapy, TENS therapy, yoga space, massage equipment, and recovery lounges. Serves broader wellness market including gym anxiety and circulation issues alongside sports recovery. Contact: calumbrodie21@gmail.com, 07862663535.","1. Always emphasise science-backed recovery methods with evidence-based explanations 2. Include Dundee, Perth, Fife, and Angus location references for regional connection 3. Highlight comprehensive facility offerings (infrared sauna, ice bath, compression therapy, TENS therapy) 4. Use professional recovery terminology while maintaining accessibility for all fitness levels 5. Reference inclusive approach welcoming people with gym anxiety, poor circulation, and various conditions 6. Emphasise modern, calming environment and professional-grade equipment 7. Connect recovery science to practical performance improvements and wellness benefits 8. Position as educational resource for recovery knowledge and proper equipment usage 9. Include team and club recovery solutions alongside individual services 10. Maintain approachable, confident tone - never preachy or overhyped in messaging",calumbrodie21@gmail.com,07862663535
+```
+
+**This CSV row is ready for direct import into your Business_Configurations database.**

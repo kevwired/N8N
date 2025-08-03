@@ -1,0 +1,74 @@
+CONTENT PACKAGE SUMMARY - KF Barbers
+============================================================
+
+Generated: 2025-08-02 20:29
+Month: Aug_25
+Total Files: 12
+
+GOOGLE DRIVE UPLOAD INFORMATION:
+===============================
+Target Google Drive Folder: KF_Barbers
+Upload Location: Google Drive > KF_Barbers > Aug_25
+
+GENERATED FILES:
+===============
+Aug_25_01_Educational_How_Often_Should_You_Get_.txt
+  Type: Educational
+  Topic: How Often Should You Get a Haircut?
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_01_Educational_How_Often_Should_You_Get_.txt
+
+Aug_25_02_Educational_Beard_Maintenance_Between.txt
+  Type: Educational
+  Topic: Beard Maintenance Between Visits
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_02_Educational_Beard_Maintenance_Between.txt
+
+Aug_25_03_Educational_Choosing_the_Right_Haircu.txt
+  Type: Educational
+  Topic: Choosing the Right Haircut for Your Face Shape
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_03_Educational_Choosing_the_Right_Haircu.txt
+
+Aug_25_04_Educational_Kids_Haircut_Preparation_.txt
+  Type: Educational
+  Topic: Kids Haircut Preparation Tips
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_04_Educational_Kids_Haircut_Preparation_.txt
+
+Aug_25_05_Behind-the-Scenes_Early_Morning_Prep_at_the.txt
+  Type: Behind-the-Scenes
+  Topic: Early Morning Prep at the Barbershop
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_05_Behind-the-Scenes_Early_Morning_Prep_at_the.txt
+
+Aug_25_06_Behind-the-Scenes_The_Art_of_Traditional_Ba.txt
+  Type: Behind-the-Scenes
+  Topic: The Art of Traditional Barbering
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_06_Behind-the-Scenes_The_Art_of_Traditional_Ba.txt
+
+Aug_25_07_Promotional_Walk-In_Wednesday_Special.txt
+  Type: Promotional
+  Topic: Walk-In Wednesday Special
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_07_Promotional_Walk-In_Wednesday_Special.txt
+
+Aug_25_08_Promotional_Father_&_Son_Appointment_.txt
+  Type: Promotional
+  Topic: Father & Son Appointment Special
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_08_Promotional_Father_&_Son_Appointment_.txt
+
+Aug_25_09_Promotional_Early_Bird_Saturday_Hours.txt
+  Type: Promotional
+  Topic: Early Bird Saturday Hours
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_09_Promotional_Early_Bird_Saturday_Hours.txt
+
+Aug_25_10_Success Story_Nervous_Child_Becomes_Reg.txt
+  Type: Success Story
+  Topic: Nervous Child Becomes Regular Customer
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_10_Success Story_Nervous_Child_Becomes_Reg.txt
+
+Aug_25_11_Success Story_Three_Generations_Choose_.txt
+  Type: Success Story
+  Topic: Three Generations Choose Us
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_11_Success Story_Three_Generations_Choose_.txt
+
+Aug_25_12_Success Story_Customer_Reviews_Speak_fo.txt
+  Type: Success Story
+  Topic: Customer Reviews Speak for Themselves
+  Local Path: Z:\Main Drive\360TFT Resources\Workflows\N8N\Content Factory Pro\Clients\KF Barbers\Aug_25\Aug_25_12_Success Story_Customer_Reviews_Speak_fo.txt
+

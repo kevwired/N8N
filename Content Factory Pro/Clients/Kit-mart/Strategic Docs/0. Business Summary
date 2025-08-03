@@ -1,0 +1,187 @@
+# Business Research & CSV Generation Prompt for Content Factory Pro
+
+## ROLE
+You are a business intelligence researcher for Content Factory Pro, specializing in comprehensive business analysis for social media content generation services. Your task is to research a business thoroughly and create a complete CSV import row for the Business_Configurations database.
+
+## BUSINESS INFORMATION - KIT-MART
+
+### VERIFIED CLIENT SUBMISSION DATA (Primary Source)
+**Client Contact**: Calum Brodie
+**Phone**: 07862663535
+**Email**: calumbrodie21@gmail.com
+**Website**: kit-mart.co.uk
+**Preferred Contact**: Email
+
+### CURRENT BUSINESS DESCRIPTION
+Kit-Mart is a dynamic e-commerce venture specialising in dropshipping sports kits, equipment, and accessories to grassroots teams, schools, academies, and amateur clubs across the UK and beyond. Designed to bridge the gap between sportswear manufacturers and end-users, Kit-Mart leverages a lean operational model to provide a wide range of customizable football, rugby, and general team sportswear without holding physical inventory. Being able to deliver locally and nationally in the space of 1-3 days.
+
+Inspired by successful models such as Direct Soccer (Dundee) and Pro:Direct Soccer, Kit-Mart is differentiated by its hyper-focused customer service, club-focused storefronts, and automated fulfilment pipelines using a network of premium supplier networks.
+
+**Business Status**: Store was offline since COVID, updated over recent months, now ready to fully launch.
+
+### TARGET AUDIENCE (CLIENT SPECIFIED)
+- Grassroots football clubs (youth and adult teams)
+- School PE departments and academies
+- School Uniform buyers
+- University sports clubs
+- Charity tournament organisers
+- Corporate sports teams and leagues
+- International youth clubs and academies
+- Personal trainers and sports influencers
+- Parents of grassroots players
+
+### BRAND VOICE GUIDELINES (CLIENT SPECIFIED)
+Your sports equipment, school uniform and grassroots sports club kit partner, powering individuals, teams and schools across the UK with fast, affordable custom sportswear and equipment. We're the reliable teammate making ordering sports kit easy and accessible so you can focus on the game, not the hassle.
+
+**Tone**: supportive, practical, energetic, trustworthy
+
+### SOCIAL MEDIA PLATFORMS
+Facebook, Instagram
+
+### CONTENT BRIEF (CLIENT SPECIFIED)
+Create re-launch content that reintroduces Kit-Mart as the go-to solution for grassroots teams, schools, and clubs needing fast, affordable, custom sports kits without the hassle of stock management. Focus on the ease of setting up a free online club shop, flexible ordering for late sign-ups, and fast delivery—even mid-season. Highlight new features, updated kit ranges, and improved turnaround times. Tone should be energetic, supportive, and practical—aimed at coaches, teachers, and team managers preparing for the upcoming season.
+
+### SEO KEYWORDS (CLIENT PROVIDED)
+**Primary Keywords**:
+- custom football kits
+- football team kits UK
+- school PE kits
+- personalised sports kits
+- sports kits for teams
+- custom teamwear UK
+- grassroots football kits
+- football kits with printing
+- PE kit suppliers UK
+- create a club shop online
+- affordable team kits UK
+- best football kit supplier for schools
+- dropship sports kits UK
+- fast football kit delivery
+- teamwear with sponsor logos
+- youth football kits UK
+- football kits for charity tournaments
+- custom kits with numbers and names
+- Sunday league football kits
+- order football kits online
+
+### CONTENT GOALS (CLIENT SPECIFIED)
+- Promote the re-launch of Kit-Mart's store and club shop system
+- Drive awareness among schools and clubs before season start
+- Educate on benefits of dropshipping kits vs traditional ordering
+- Convert browsing users into first-time team kit customers
+- Support existing teams with reorder or add-on kit campaigns
+
+### TONE & STYLE GUIDELINES (CLIENT SPECIFIED)
+- Keep language simple, clear, and friendly
+- Speak directly to coaches, teachers, parents, and players
+- Avoid jargon and overly corporate phrases
+- Highlight time-saving and stress-reducing benefits
+- Encourage action with confident but non-pushy CTAs
+
+## ENHANCED BUSINESS CONTEXT FOR DATABASE ENTRY
+
+### BUSINESS CATEGORY
+Sports Coaching & Training / E-commerce
+
+### MARKET LANDSCAPE ANALYSIS
+**Direct Competitors in Scotland**:
+- **Direct Soccer (Dundee)**: Established 1997, 30+ years experience, family-run business (Bryce & Joyce Gibson), advanced AutoStore warehouse automation, 40 orders/hour dispatch rate, in-house printing/embroidery, major brand partnerships (Nike, adidas, Joma, Mitre)
+- **The Soccer Shop Direct**: Scotland-based specialists, multiple locations including Aberdeen and Dunfermline, in-house customisation, club shop partnerships, VIP club membership system
+- **Pro:Direct Soccer**: Major online presence, global reach, elite product range, next-day delivery, trusted by professional teams
+
+**Key Market Gap Identified**: Existing major suppliers like Direct Soccer require significant warehouse investment (€235,000+ in automation costs), physical inventory, and complex logistics systems. Kit-Mart's dropshipping model eliminates these barriers.
+
+### UNIQUE SELLING PROPOSITIONS (ENHANCED)
+1. **Dropshipping Innovation**: No physical inventory requirements vs competitors' massive warehouse investments
+2. **Rapid Market Entry**: 1-3 day delivery without warehouse infrastructure overhead
+3. **Zero-Barrier Club Shops**: Free online club shop setup vs competitors' complex setup processes
+4. **Lean Operation Model**: Hyper-focused customer service without warehouse management costs
+5. **Automated Fulfilment**: Premium supplier network integration without inventory risk
+6. **Mid-Season Flexibility**: Late sign-up accommodation vs traditional seasonal ordering constraints
+7. **Complete Customisation**: Custom teamwear with printing, numbers, sponsor logos
+8. **Manufacturer Bridge**: Direct connection between sportswear manufacturers and end-users
+9. **Multi-Sport Coverage**: Football, rugby, and general team sports under one platform
+10. **Post-COVID Market Timing**: Relaunch targeting budget-conscious clubs recovering from pandemic
+
+### TARGET AUDIENCE EXPANSION (MARKET-INFORMED)
+**Primary Segments**:
+1. **Grassroots Football Clubs** (35% of market)
+   - Youth and adult teams across UK lacking access to Direct Soccer-level infrastructure
+   - Pain Points: Can't afford €235,000+ warehouse systems, kit ordering complexity, stock management, upfront inventory costs
+   - Goals: Simple ordering without warehouse investment, quick delivery, affordable custom kits
+   - Decision Drivers: No upfront inventory costs, price transparency, customisation without bulk orders
+
+2. **Budget-Conscious Schools & Academies** (30% of market)
+   - PE departments, school sports teams unable to commit to bulk inventory
+   - Pain Points: Limited budgets for inventory investment, seasonal ordering constraints, storage limitations
+   - Goals: Pay-per-order model, reliable delivery, easy reordering without storage
+   - Decision Drivers: No inventory commitment, educational pricing, service reliability
+
+3. **Emerging University Sports Clubs** (20% of market)
+   - Student-run societies competing against established suppliers' complex systems
+   - Pain Points: Can't compete with Direct Soccer's 40-order/hour systems, limited budgets, frequent kit changes
+   - Goals: Affordable customisation, flexible ordering, quick turnaround without warehouse investment
+   - Decision Drivers: Student-friendly pricing, no bulk order requirements, customisation quality
+
+4. **Underserved Community Groups** (15% of market)
+   - Corporate sports teams, charity tournaments, community leagues outside major supplier networks
+   - Pain Points: One-off ordering complexity with established suppliers, professional appearance needs
+   - Goals: Professional quality without warehouse relationships, sponsor logo integration, hassle-free process
+   - Decision Drivers: Accessible ordering process, customisation capabilities without bulk commitments
+
+### BRAND VOICE REFINED
+**Core Approach**: Supportive teammate approach that eliminates kit ordering hassles
+**Professional Positioning**: E-commerce expertise with grassroots sports understanding
+**Communication Style**: Supportive, practical, energetic, trustworthy - always helpful, never pushy
+**Tone Attributes**: Simple, clear, friendly, direct communication to coaches, teachers, parents, players
+
+### CONTENT STRATEGY FOCUS
+**Re-launch Priority**: Reintroduce Kit-Mart as the leading solution for hassle-free team kit ordering
+**Educational Focus**: Benefits of dropshipping model vs traditional ordering methods
+**Conversion Priority**: Drive first-time customers and support existing team reorders
+**Seasonal Timing**: Pre-season awareness campaigns and mid-season flexibility messaging
+
+## CSV FIELD COMPLETION REQUIREMENTS
+
+### BUSINESS CONTEXT (MARKET-INFORMED)
+Kit-Mart is a disruptive e-commerce venture leveraging dropshipping to challenge established football kit suppliers like Direct Soccer (Dundee), which requires €235,000+ warehouse investments and 40+ staff operations. Following a strategic post-COVID relaunch, Kit-Mart offers 1-3 day delivery and custom teamwear through direct manufacturer relationships, eliminating the warehouse infrastructure and inventory costs that traditional suppliers require. Unlike competitors who need complex AutoStore automation systems dispatching 40 orders/hour, Kit-Mart's lean model provides free online club shop setup and automated fulfilment without physical inventory investment.
+
+### TARGET AUDIENCE
+Grassroots football clubs (youth and adult teams), school PE departments and academies, school uniform buyers, university sports clubs, charity tournament organisers, corporate sports teams, international youth clubs, personal trainers, sports influencers, and parents of grassroots players across the UK. Focus on coaches, teachers, and team managers who need fast, affordable, custom sports kits without stock management hassles.
+
+### BRAND VOICE
+Supportive, practical, energetic, and trustworthy partner for grassroots sports kit needs. Language is simple, clear, and friendly, speaking directly to coaches, teachers, parents, and players. Avoids jargon and corporate phrases while highlighting time-saving and stress-reducing benefits. Position as the reliable teammate making kit ordering easy and accessible so teams can focus on the game, not the hassle.
+
+### CONTENT REQUIREMENTS
+Re-launch content reintroducing Kit-Mart as the go-to solution for hassle-free team kit ordering. Focus on free online club shop setup, flexible ordering for late sign-ups, fast delivery (even mid-season), new features, updated kit ranges, and improved turnaround times. Target coaches, teachers, and team managers preparing for upcoming seasons with confident but non-pushy calls-to-action.
+
+## GLOBAL CONTENT RULES (10 SPECIFIC RULES)
+
+1. Always emphasise hassle-free kit ordering and elimination of stock management stress
+2. Highlight 1-3 day delivery capability across UK for urgent and regular orders
+3. Promote free online club shop setup as key differentiator and convenience factor
+4. Reference flexibility for late sign-ups and mid-season additions as major benefit
+5. Use grassroots sports terminology while avoiding corporate jargon or complex language
+6. Position as supportive teammate rather than just supplier - "we're in this together"
+7. Emphasise post-COVID relaunch with improved features, ranges, and turnaround times
+8. Include direct appeals to coaches, teachers, parents, and team managers in messaging
+9. Highlight custom printing, numbers, names, and sponsor logo capabilities
+10. Balance educational content about dropshipping benefits with conversion-focused messaging
+
+---
+
+## EXECUTE CSV GENERATION
+
+Based on the verified client information above, generate the complete CSV import row:
+
+### CSV HEADER ROW:
+```
+ID,Title,Business Category,Active Status,Target Audience,GENERATE TEXT - System Message,Content Length Limit,Brand Voice Guidelines,Hashtag Strategy,Call to Action Template,GENERATE PROMPT - User Message,GENERATE PROMPT - System Message,Image Style Preferences,Brand Colors,Google Drive Parent Folder,Social Platforms,SEO Strategy Template,Website URLs,Business Owner,Social Handle,Created Date,Last Modified,Notes,Global Content Rules,Email,Phone
+```
+
+### CSV DATA ROW:
+```
+30,Kit-Mart,Sports Coaching & Training,Yes,"Grassroots football clubs across the UK unable to access traditional supplier infrastructure like Direct Soccer's €235,000+ warehouse systems (35%), budget-conscious schools and academies without inventory investment capability (30%), emerging university sports clubs competing against established 40-order/hour dispatch systems (20%), and underserved community groups outside major supplier networks (15%). Geographic focus: UK-wide targeting clubs excluded from traditional supplier requirements. Demographics: Coaches, teachers, team managers, and parents aged 25-55 managing teams with limited budgets and storage capabilities. Pain points: Cannot afford warehouse infrastructure, bulk inventory requirements, complex supplier onboarding, seasonal ordering constraints, upfront inventory costs. Decision drivers: Pay-per-order model, no inventory commitment, accessible customisation, transparent pricing, hassle-free setup.","You are writing content for Kit-Mart, a disruptive e-commerce venture leveraging dropshipping to challenge traditional football kit suppliers requiring €235,000+ warehouse investments and 40+ staff operations. BUSINESS CONTEXT: Post-COVID relaunch targeting grassroots teams excluded from traditional supplier infrastructure. Offers 1-3 day delivery through direct manufacturer relationships, eliminating warehouse costs and inventory requirements that competitors like Direct Soccer (Dundee) need. Provides free online club shop setup and automated fulfilment without physical inventory investment. TARGET AUDIENCE: Grassroots clubs, schools, universities, and community groups unable to access traditional supplier infrastructure or commit to bulk inventory requirements. CONTENT REQUIREMENTS: Position as accessible alternative to warehouse-dependent suppliers, emphasise elimination of inventory investment and bulk ordering constraints. BRAND VOICE: Disruptive challenger eliminating traditional barriers while maintaining professional service quality.",50,"Disruptive yet trustworthy challenger positioning Kit-Mart as the accessible alternative to traditional suppliers requiring warehouse infrastructure. Position as the reliable teammate democratising access to professional kit services without the barriers of inventory investment, bulk ordering, or complex supplier relationships. Language emphasises accessibility, transparency, and elimination of traditional constraints while maintaining professional quality. Tone should be confident but approachable, highlighting how dropshipping innovation removes barriers rather than compromising quality. Challenge industry norms while reassuring about service reliability.","#KitMart #DropshippingKits #GrassrootsFootball #CustomFootballKits #TeamKits #NoInventoryRequired #FootballKitsUK #AccessibleTeamwear #DirectToClub #SchoolSportsKits #PersonalisedSports #CustomTeamwear #FlexibleOrdering #TeamKitSupplier #SportsKitOrdering #ClubShop #FastDelivery #CustomPrinting #SportsEquipment #TeamApparel #FootballKitPrinting #SchoolSports #YouthFootball #SundayLeague #TeamwearUK #KitWithoutConstraints","Ready to revolutionise your team's kit ordering? Join the clubs who've eliminated inventory hassles with Kit-Mart's dropshipping solution. Set up your free online club shop today and experience professional custom teamwear with 1-3 day delivery - no warehouse required! Contact us now to break free from traditional constraints.","Please provide the specific content topic you would like me to create content about for Kit-Mart.","You are an expert at creating specific image prompts for Kit-Mart's disruptive e-commerce content. Create imagery contrasting traditional warehouse-dependent kit suppliers with Kit-Mart's accessible dropshipping model. Show grassroots teams, schools, and community clubs accessing professional custom kit without inventory constraints. Focus on the democratisation of professional teamwear - custom football kits, rugby kit, school PE uniforms with printing, numbers, names, and sponsor logos being delivered directly to teams without warehouse infrastructure.","Professional sports kit photography contrasting traditional supplier constraints with dropshipping accessibility. Show grassroots teams receiving professional custom kit without warehouse requirements. Focus on football kits, rugby kit, school PE uniforms with custom printing delivered directly to clubs. Emphasise democratised access to professional teamwear - small clubs getting same quality as major teams without inventory investment.","Primary: Challenger Red (#E31E24), Innovation Blue (#1E40AF), Accessible Green (#22C55E), Clean White (#FFFFFF). Disruptive palette emphasising accessibility and challenging traditional constraints while maintaining professional credibility.",Kit_Mart,"Facebook, Instagram","PRIMARY KEYWORDS: custom football kits, football team kits UK, school PE kits, personalised sports kits, sports kits for teams, custom teamwear UK, grassroots football kits, football kits with printing, PE kit suppliers UK, create a club shop online, affordable team kits UK, best football kit supplier for schools, dropship sports kits UK, fast football kit delivery, teamwear with sponsor logos, youth football kits UK, football kits for charity tournaments, custom kits with numbers and names, Sunday league football kits, order football kits online. LONG-TAIL KEYWORDS: football kits without inventory, dropshipping teamwear UK, kit supplier no warehouse required, grassroots football accessible pricing, custom kits small orders. CONTENT STRATEGY: Challenge traditional supplier model while emphasising professional quality and accessibility. Educational content about dropshipping benefits vs warehouse-dependent suppliers.",kit-mart.co.uk,Calum Brodie,@kitmart,July 30 2025,July 30 2025,"Post-COVID relaunch challenging traditional football kit suppliers requiring €235,000+ warehouse investments (Direct Soccer model). Dropshipping innovation eliminates inventory costs and bulk ordering constraints that exclude grassroots clubs from professional teamwear access. Key differentiators: No inventory investment required, free club shop setup, 1-3 day delivery without warehouse infrastructure, direct manufacturer relationships, accessible professional customisation. Target: Clubs excluded from traditional supplier requirements. Contact: calumbrodie21@gmail.com, 07862663535.","1. Always position as accessible alternative to warehouse-dependent traditional suppliers requiring major infrastructure investment 2. Highlight elimination of inventory costs and bulk ordering constraints that exclude grassroots clubs 3. Emphasise democratisation of professional teamwear access - small clubs get same quality as major teams 4. Reference 1-3 day delivery capability without warehouse infrastructure overhead as key differentiator 5. Challenge traditional supplier model while maintaining professional quality and service credibility 6. Position dropshipping as innovation rather than compromise - eliminating barriers not quality 7. Target clubs, schools, and teams excluded from traditional supplier infrastructure requirements 8. Emphasise transparent pricing without hidden warehouse costs or minimum order requirements 9. Highlight post-COVID market timing as opportunity to rebuild with more accessible model 10. Balance disruptive messaging with reassurance about professional service quality and reliability",calumbrodie21@gmail.com,07862663535
+```
+
+**This CSV row is ready for direct import into your Business_Configurations database.**
